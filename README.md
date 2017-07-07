@@ -41,3 +41,22 @@ Our reality shows that even one single developer can perform quite a complicated
 I will finalize my current projects in any cases, but I can't handle everything at once. I'm aiming to hire at least two developers to team up with me and work on protocol upgrades. I'd like to hire a web-site developer and an employee who will engage in socio-oriented work as well.
 
 The success of the team depends on how much funds would be contributed during the ICO.
+
+
+# Contracts
+
+#### Addresses on ETC mainnet.
+FrontEnd: 0x345a9e6c44d546dae5141700372986c4bb532e3d
+Library:  0x3d494c82c6bb6598aed0b3e7e13f993ff5fff917
+Storage:  0x873ad067fa8073c57e4a566583437e971a69a731
+
+ICO:      0x488c9e2df11ac9d19eb07df362cb174ffd4724d8
+
+DEX token consists of 3 contracts: [FrontEnd](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/FrontEnd.sol), [Library](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/Library.sol) and [Storage](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/Storage.sol).
+
+
+
+The main contract here is `FrontEnd.sol`.
+User should always interact with FrontEnd contract. FrontEnd contract is firing events and invoking another contracts. Every third party service should watch FrontEnd as well. FrontEnd contract is `delegatecall`ing Library and performing invokes of DataBase to increase or decrease balances. Balances are stored in `Storage.sol` contract. If an error will be discovered in this contracts then only logical `Library.sol` should be replaced. Nothing will change for users and 3d party services.
+
+DEX token is a standard ERC223 token.
