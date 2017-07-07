@@ -46,11 +46,14 @@ The success of the team depends on how much funds would be contributed during th
 # Contracts
 
 #### Addresses on ETC mainnet.
-FrontEnd: 0x345a9e6c44d546dae5141700372986c4bb532e3d
-Library:  0x3d494c82c6bb6598aed0b3e7e13f993ff5fff917
-Storage:  0x873ad067fa8073c57e4a566583437e971a69a731
 
-ICO:      0x488c9e2df11ac9d19eb07df362cb174ffd4724d8
+FrontEnd: [0x345a9e6c44d546dae5141700372986c4bb532e3d](http://gastracker.io/addr/0x345a9e6c44d546dae5141700372986c4bb532e3d)
+
+Library:  [0x3d494c82c6bb6598aed0b3e7e13f993ff5fff917](http://gastracker.io/addr/0x3d494c82c6bb6598aed0b3e7e13f993ff5fff917)
+
+Storage:  [0x873ad067fa8073c57e4a566583437e971a69a731](http://gastracker.io/addr/0x873ad067fa8073c57e4a566583437e971a69a731)
+
+ICO:      [0x488c9e2df11ac9d19eb07df362cb174ffd4724d8](http://gastracker.io/addr/0x488c9e2df11ac9d19eb07df362cb174ffd4724d8)
 
 DEX token consists of 3 contracts: [FrontEnd](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/FrontEnd.sol), [Library](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/Library.sol) and [Storage](https://github.com/Dexaran/ICO/blob/master/ERC223_Simple_Token/Storage.sol).
 
