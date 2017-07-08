@@ -4,3 +4,5 @@ FRONTEND: 0x345a9e6c44d546dae5141700372986c4bb532e3d
 
 
 ICO:   0x488c9e2df11ac9d19eb07df362cb174ffd4724d8
+
+FrontEnd contract contains a debugging function for library replacement if an error will occur.
