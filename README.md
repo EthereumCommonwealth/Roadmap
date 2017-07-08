@@ -63,3 +63,5 @@ The main contract here is `FrontEnd.sol`.
 User should always interact with FrontEnd contract. FrontEnd contract is firing events and invoking another contracts. Every third party service should watch FrontEnd as well. FrontEnd contract is `delegatecall`ing Library and performing invokes of DataBase to increase or decrease balances. Balances are stored in `Storage.sol` contract. If an error will be discovered in this contracts then only logical `Library.sol` should be replaced. Nothing will change for users and 3d party services.
 
 DEX token is a standard ERC223 token.
+
+FrontEnd contract contains a debugging function for replacement of logical `Library`. If 80% of token holders would decide to do it then they can change library.
