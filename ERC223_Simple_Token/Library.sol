@@ -17,7 +17,7 @@ contract DEX_LogicLibrary is Initializable {
     function transfer(address _to, uint _value, bytes _data)
     {
         /* Only hardcoded addresses could be `delegatecall`ed */
-        address _storage = 0x3d467a2c129f644ac315dd6a11427574c631f443;
+        address _storage = 0x873ad067fa8073c57e4a566583437e971a69a731;
         
         uint codeLength;
         assembly {
@@ -42,7 +42,7 @@ contract DEX_LogicLibrary is Initializable {
     
     function transfer(address _to, uint _value)
     {
-        address _storage = 0x3d467a2c129f644ac315dd6a11427574c631f443;
+        address _storage = 0x873ad067fa8073c57e4a566583437e971a69a731;
         
         uint codeLength;
         bytes memory _empty;
