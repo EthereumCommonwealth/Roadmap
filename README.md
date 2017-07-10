@@ -30,10 +30,12 @@ Main goals of this ICO are:
 
     6. Protocol upgrades.
     We should prepare a code base for future protocol upgrades. I think that it will be a good idea to cooperate with Ethereum Foundation developers that are currently working on Raiden and SWARM.
-
-    7. Governance system.
+    
+    7. zk-SNARK.
+    I believe that one of important points is to have zk-SNARKs enabled on ETC. I'm ready to work on implementation of custom zk-SNARKs (requires VM upgrade) or implement pre-compiled contracts.
+    
+    8. Governance system.
     I'm aiming to work in the named direction during the year. After the year will pass we will establish a smart-contract based voting, where DEX tokens would be used.
-
     On 1st September 2018 I will deploy a voting contract. Everyone can file an issue on github repo of DEX token. We will link github's issues with a smart contract to allow DEX owners to vote on the proposed goals. We will focus on developing top voted proposals.
 
 Our reality shows that even one single developer can perform quite a complicated job. It's just a matter of time.
