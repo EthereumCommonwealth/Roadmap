@@ -14,7 +14,7 @@ contract Temporary_Votepool
     address public owner = msg.sender;
     address public token = 0x345a9e6c44d546dae5141700372986c4bb532e3d;
     
-    string public name = "Don't care";
+    string public name;
     
     mapping (address => uint256) public deposited;
     
@@ -33,6 +33,11 @@ contract Temporary_Votepool
         ERC223Basic Token = ERC223Basic(token);
         Token.transfer(_who, deposited[_who]);
         deposited[_who] = 0; 
+    }
+    
+    function Update_Proposal(string _proposal) only_owner
+    {
+        name = _proposal;
     }
     
     function Withdraw()
