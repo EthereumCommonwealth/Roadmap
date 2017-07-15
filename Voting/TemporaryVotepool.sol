@@ -15,7 +15,7 @@ contract Temporary_Votepool
     mapping (address => bool) public muted;
     
     address public owner = msg.sender;
-    address public token = 0x7DF6e544E090418f2ad76DE3C424467be52f4203;
+    address public token = 0x345a9e6c44d546dae5141700372986c4bb532e3d;
     
     string public name;
     
