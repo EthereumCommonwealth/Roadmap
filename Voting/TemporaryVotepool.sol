@@ -11,8 +11,11 @@ contract ERC223Basic {
 
 contract Temporary_Votepool
 {
+    
+    mapping (address => bool) public muted;
+    
     address public owner = msg.sender;
-    address public token = 0x345a9e6c44d546dae5141700372986c4bb532e3d;
+    address public token = 0x7DF6e544E090418f2ad76DE3C424467be52f4203;
     
     string public name;
     
@@ -25,6 +28,10 @@ contract Temporary_Votepool
         if(msg.sender == token)
         {
             deposited[_from] += _value;
+        }
+        else 
+        {
+            throw;
         }
     }
     
@@ -60,5 +67,18 @@ contract Temporary_Votepool
             throw;
         }
         _;
+    }
+    
+    modifier mutex
+    {
+        if( muted[msg.sender] )
+        {
+            throw;
+        }
+        
+        muted[msg.sender] = true;
+        _;
+        
+        muted[msg.sender] = false;
     }
 }
