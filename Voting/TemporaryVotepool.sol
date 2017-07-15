@@ -35,7 +35,7 @@ contract Temporary_Votepool
         }
     }
     
-    function Refund(address _who) only_owner
+    function Refund(address _who) only_owner mutex(_who)
     {
         ERC223Basic Token = ERC223Basic(token);
         Token.transfer(_who, deposited[_who]);
@@ -47,7 +47,7 @@ contract Temporary_Votepool
         name = _proposal;
     }
     
-    function Withdraw()
+    function Withdraw() mutex(msg.sender)
     {
         ERC223Basic Token = ERC223Basic(token);
         Token.transfer(msg.sender, deposited[msg.sender]);
@@ -69,16 +69,16 @@ contract Temporary_Votepool
         _;
     }
     
-    modifier mutex
+    modifier mutex(address _target)
     {
-        if( muted[msg.sender] )
+        if( muted[_target] )
         {
             throw;
         }
         
-        muted[msg.sender] = true;
+        muted[_target] = true;
         _;
         
-        muted[msg.sender] = false;
+        muted[_target] = false;
     }
 }
