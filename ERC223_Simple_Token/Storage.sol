@@ -40,11 +40,13 @@ contract DEX_StateStorage is Initializable {
     function increase_balance(address _owner, uint256 _amount) only_frontend
     {
         balances[_owner] = balances[_owner].add(_amount);
+        total_Supply = total_Supply.add(_amount);
     }
     
     function decrease_balance(address _owner, uint256 _amount) only_frontend
     {
         balances[_owner] = balances[_owner].sub(_amount);
+        total_Supply = total_Supply.sub(_amount);
     }
     
     /** ICO **/
