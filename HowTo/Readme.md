@@ -33,7 +33,7 @@ Then press "Save" button.
 
 After you added DEX tokens in your MyEtherWallet tab you can choose what currency would you like to transfer when makin transaction. Click on currency symbol to choose DEX token from dropdown menu:
 
-![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/send_DEX_token.png)
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/send_DEX_token.jpg)
 
 ## Where it will be stored?
 
