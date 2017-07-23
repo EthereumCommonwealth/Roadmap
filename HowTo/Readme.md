@@ -31,6 +31,10 @@ Then press "Save" button.
 
 #### IMPORTANT: You should add `0x345a9e6c44d546dae5141700372986c4bb532e3d` address to watch token. This is an address of token contract. If you will add ICO contract address then you will not be able to watch your tokens because of ICO contract is not a token contract.
 
+After you added DEX tokens in your MyEtherWallet tab you can choose what currency would you like to transfer when makin transaction. Click on currency symbol to choose DEX token from dropdown menu:
+
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/send_DEX_token.png)
+
 ## Where it will be stored?
 
 Token balance is mappable variable inside token contract in fact.
