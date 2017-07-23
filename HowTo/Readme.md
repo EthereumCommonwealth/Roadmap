@@ -25,4 +25,6 @@ Token Symbol: DEX
 
 Decimals: 18
 
+#### IMPORTANT: You should add `0x345a9e6c44d546dae5141700372986c4bb532e3d` address to watch token. This is an address of token contract. If you will add ICO contract address then you will not be able to watch your tokens because of ICO contract is not a token contract.
+
 ![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/MEW_DEX.png)
