@@ -27,4 +27,25 @@ Decimals: 18
 
 ![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/MEW_DEX.png)
 
-##### IMPORTANT: You should add `0x345a9e6c44d546dae5141700372986c4bb532e3d` address to watch token. This is an address of token contract. If you will add ICO contract address then you will not be able to watch your tokens because of ICO contract is not a token contract.
+#### IMPORTANT: You should add `0x345a9e6c44d546dae5141700372986c4bb532e3d` address to watch token. This is an address of token contract. If you will add ICO contract address then you will not be able to watch your tokens because of ICO contract is not a token contract.
+
+## Where it will be stored?
+
+Token balance is mappable variable inside token contract in fact.
+
+For ordinary users and non-technicians token is the same thing as ETC. You can hold token on your ETC-address, you can transfer token from one ETC-address to another ETC-address. MyEtherWallet will show your token balance as well.
+
+When you are sending ETC you should pay a little comission in ETC.
+Token differs from ETC so that when you send a token, you still pay a commission in ETC.
+
+## How to vote?
+
+Voting process is not yet defined. I've said that I will establish a final version of voting contract at 1st September, 2018.
+
+I have a [Trial Voting](https://github.com/Dexaran/ICO/issues/1) version now. You should transfer your tokens to voting contract to participate in trial voting.
+
+For example, to vote for item "1", you must transfer the token to `0x01` and vote for item "2", you must transfer the token to the address `0x02`.
+
+Tokens would not be spent during the voting. You can withdraw tokens from token contract at any time. I have not yet created a web UI for this but I will do it a bit later.
+
+After the voting will end all remaining tokens would be sent to their owners automatically. It means if you haven't withdrawn tokens manually then you will receive them back after the voting will end automatically.
