@@ -5,7 +5,7 @@
 
 You should send ETC to the ICO contract address. You will receive DEX automatically after the transaction will submit. 
 
-** WARNING ! Do not send ETC from the exchange wallet! DEX tokens would be credited to the wallet that sent the transaction. If you don't want exchange wallet to receive your tokens then you should use your own wallet.**
+**WARNING ! Do not send ETC from the exchange wallet! DEX tokens would be credited to the wallet that sent the transaction. If you don't want exchange wallet to receive your tokens then you should use your own wallet.**
 
 You can use MyEtherWallet to do it, for example.
 
