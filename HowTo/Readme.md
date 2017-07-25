@@ -52,6 +52,38 @@ I have a [Trial Voting](https://github.com/Dexaran/ICO/issues/1) version now. Yo
 
 For example, to vote for item "1", you must transfer the token to `0x01` and vote for item "2", you must transfer the token to the address `0x02`.
 
+**IMPORTANT !** You should attach 90 000 GAS to the voting transactions. Otherwise your tokens would not be transferred to the contract address and the transaction will fail (tokens would just stay at your balance in this case)
+
 Tokens would not be spent during the voting. You can withdraw tokens from token contract at any time. I have not yet created a web UI for this but I will do it a bit later.
 
 After the voting will end all remaining tokens would be sent to their owners automatically. It means if you haven't withdrawn tokens manually then you will receive them back after the voting will end automatically.
+
+## How to withdraw tokens from VotePool contract?
+
+First of all you need VotePool contract ABI: https://github.com/Dexaran/ICO/blob/master/Voting/VotePoolABI.abi
+
+```
+[{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"Vote_Name","outputs":[{"name":"_name","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"Withdraw","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_who","type":"address"}],"name":"Refund","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_proposal","type":"string"}],"name":"Update_Proposal","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"Total_Score","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_value","type":"uint256"},{"name":"_data","type":"bytes"}],"name":"tokenFallback","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"deposited","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"token","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"}]
+```
+
+Copy the ABI and open MyEtherWallet "Contract" tab. Paste ABI into the "ABI / JSON Interface" section. 
+
+Find an address of the contract that you voted and paste it into "Contract Address" section as follows:
+
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Voting.jpg)
+
+Press "Access" button.
+
+Press "Select function" dropdown menu.
+
+Choose "Withdraw" function.
+
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Withdrawing.jpg)
+
+Unlock your wallet and click "WRITE" button. Attach 90 000 GAS to the transaction and press Generate Transaction button. Confirm the transaction.
+
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Proceed.jpg)
+
+Thats all, you have successfully withdrawn your tokens.
+
+If you have any problems feel free to contact me: dexaran820@gmail.com
