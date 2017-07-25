@@ -70,7 +70,7 @@ Copy the ABI and open MyEtherWallet "Contract" tab. Paste ABI into the "ABI / JS
 
 Find an address of the contract that you voted and paste it into "Contract Address" section as follows:
 
-![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Voting.jpg)
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Voting.jpg)
 
 Press "Access" button.
 
@@ -78,11 +78,11 @@ Press "Select function" dropdown menu.
 
 Choose "Withdraw" function.
 
-![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Withdrawing.jpg)
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Withdrawing.jpg)
 
 Unlock your wallet and click "WRITE" button. Attach 90 000 GAS to the transaction and press Generate Transaction button. Confirm the transaction.
 
-![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Proceed.jpg)
+![alt text](https://github.com/Dexaran/ICO/blob/master/HowTo/VotePool_Proceed.jpg)
 
 Thats all, you have successfully withdrawn your tokens.
 
