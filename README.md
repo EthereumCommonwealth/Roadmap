@@ -24,7 +24,7 @@ In case of conflict of interests the decision is always made through DEX token v
 
 ### The policy of openness for contributors.
 
-Ethereum Commonwealth is open for contributions. Anyone is allowed to submit a contribution to any of the Ethereum Commonwealth projects or to propose a new milestone for Ethereum Commonwelath roadmap.
+Ethereum Commonwealth is open for contributions. Read more about [terms of contributions and payment requests](https://github.com/EthereumCommonwealth/Roadmap/issues/35).
 
 For more information feel free to write a e-mail: dexaran@ethereumclassic.org
 
