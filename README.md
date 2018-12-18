@@ -54,6 +54,12 @@ What we already did:
 
 - [x] ERC223 token standard.
 
+- [x] Callisot Chian: security auditing of ETC smart-contracts.
+
+- [x] Callisto Chain: experimental protocol changes. Ready for ECIP.
+
+- [x] Callisto Chain: development funding solution. Ready for ECIP.
+
 Ethereum is moving forwards. It is guaranteed  that Ethereum developers will make mistakes. It is just impossible to develop something error-free with a first attempt. Our goal is to track this mistakes, solve them and introduce an improved implementation for Ethereum Classic.
 
 ENS was launched with two critical mistakes on Ethereum. We launched ECNS without any mistakes on Ethereum Classic.
