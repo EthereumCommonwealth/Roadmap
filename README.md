@@ -50,7 +50,7 @@ What we already did:
 
 - [x] DexNS naming service for smart-contract and automated token support.
 
-- [x] Viper online compiler.
+- [x] Vyper online compiler.
 
 - [x] ERC223 token standard.
 
